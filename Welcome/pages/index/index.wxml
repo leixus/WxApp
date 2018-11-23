@@ -1,18 +1,20 @@
+<import src='index-template/index-template.wxml' />
+
 <view>
-    <swiper class='swiper-container' indicator-dots='true'>
-        <swiper-item>
-            <image src='/images/post/bl.png'></image>
+    <swiper class='swiper-container' indicator-dots='true' autoplay="true" interval="2000">
+        <swiper-item wx:for="{{swiperItem}}" wx:for-item="item" wx:for-index="idx">
+            <image src='{{item}}'></image>
         </swiper-item>
-        <swiper-item>
+        <!-- <swiper-item>
             <image src='/images/post/cat.png'></image>
         </swiper-item>
         <swiper-item>
             <image src='/images/post/vr.png'></image>
-        </swiper-item>
+        </swiper-item> -->
     </swiper>
 </view>
 
-<view class='index-container'>
+<!-- <view class='index-container'>
     <view class='index-header'>
         <image class='index-images' src='/images/avatar/2.png'></image>
         <text class='index-header-date'>Nov 25 2016</text>
@@ -50,4 +52,10 @@
         <image class='index-icon' src='/images/icon/view.png'></image>
         <text class='index-icon-text'>106</text>
     </view>
-</view>
+</view> -->
+
+<block wx:for="{{postData}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap="onPostTap" data-postId="{{item.postId}}">
+        <template is="postItem" data="{{...item}}" />
+    </view>
+</block>

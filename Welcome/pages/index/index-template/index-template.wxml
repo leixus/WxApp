@@ -1,5 +1,43 @@
-<!--pages/index/index-template/index-template.wxml-->
-<text>pages/index/index-template/index-template.wxml</text>
-<template>
+<!-- <template name="postItem">
+    <view class='index-container'>
+        <view class='index-header'>
+            <image class='index-images' src='/images/avatar/2.png'></image>
+            <text class='index-header-date'>Nov 25 2016</text>
+        </view>
+        <view class='index-content-header'>
+            <text>雷旭的心情</text>
+        </view>
+        <view>
+            <image class='index-content-images' src='/images/post/sls.jpg'></image>
+            <text class='index-content-text'>生命的美丽，永远展现在她的进取之中；就像大树的美丽，是展现在它负势向上高耸入云的蓬勃生机中；像雄鹰的美丽，是展现在它搏风击雨如苍天之魂的翱翔中；像江河的美丽，是展现在它波涛汹涌一泻千里的奔流中。</text>
+        </view>
+        <view>
+            <image class='index-icon' src='/images/icon/chat.png'></image>
+            <text class='index-icon-text'>96</text>
+            <image class='index-icon' src='/images/icon/view.png'></image>
+            <text class='index-icon-text'>96</text>
+        </view>
+    </view>
+</template> -->
 
+<template name="postItem">
+    <view class='index-container'>
+        <view class='index-header'>
+            <image class='index-images' src='{{avatar}}'></image>
+            <text class='index-header-date'>{{date}}</text>
+        </view>
+        <view class='index-content-header'>
+            <text>{{title}}</text>
+        </view>
+        <view>
+            <image class='index-content-images' src='{{imgSrc}}'></image>
+            <text class='index-content-text'>{{content}}</text>
+        </view>
+        <view>
+            <image class='index-icon' src='/images/icon/chat.png'></image>
+            <text class='index-icon-text'>{{collection}}</text>
+            <image class='index-icon' src='/images/icon/view.png'></image>
+            <text class='index-icon-text'>{{reading}}</text>
+        </view>
+    </view>
 </template>
