@@ -1,0 +1,53 @@
+<view>
+    <swiper class='swiper-container' indicator-dots='true'>
+        <swiper-item>
+            <image src='/images/post/bl.png'></image>
+        </swiper-item>
+        <swiper-item>
+            <image src='/images/post/cat.png'></image>
+        </swiper-item>
+        <swiper-item>
+            <image src='/images/post/vr.png'></image>
+        </swiper-item>
+    </swiper>
+</view>
+
+<view class='index-container'>
+    <view class='index-header'>
+        <image class='index-images' src='/images/avatar/2.png'></image>
+        <text class='index-header-date'>Nov 25 2016</text>
+    </view>
+    <view class='index-content-header'>
+        <text>雷旭的心情</text>
+    </view>
+    <view>
+        <image class='index-content-images' src='/images/post/sls.jpg'></image>
+        <text class='index-content-text'>生命的美丽，永远展现在她的进取之中；就像大树的美丽，是展现在它负势向上高耸入云的蓬勃生机中；像雄鹰的美丽，是展现在它搏风击雨如苍天之魂的翱翔中；像江河的美丽，是展现在它波涛汹涌一泻千里的奔流中。</text>
+    </view>
+    <view>
+        <image class='index-icon' src='/images/icon/chat.png'></image>
+        <text class='index-icon-text'>96</text>
+        <image class='index-icon' src='/images/icon/view.png'></image>
+        <text class='index-icon-text'>96</text>
+    </view>
+</view>
+
+<view class='index-container'>
+    <view class='index-header'>
+        <image class='index-images' src='/images/avatar/3.png'></image>
+        <text class='index-header-date'>Nov 16 2017</text>
+    </view>
+    <view class='index-content-header'>
+        <text>雷旭的心情第二部</text>
+    </view>
+    <view>
+        <image class='index-content-images' src='/images/post/crab.png'></image>
+        <text class='index-content-text'> 一个人总是仰望和羡慕着别人的幸福，一回头，却发现自己正被仰望和羡慕着。其实，每个人都是幸福的。只是，你的幸福，常常在别人眼里。饭菜要一口一口吃，日子要一天一天过，成长要一点一点积累，幸福要一点一点感悟。希望你能够在平凡的生活中收获不平凡的幸福!</text>
+    </view>
+    <view>
+        <image class='index-icon' src='/images/icon/chat.png'></image>
+        <text class='index-icon-text'>86</text>
+        <image class='index-icon' src='/images/icon/view.png'></image>
+        <text class='index-icon-text'>106</text>
+    </view>
+</view>

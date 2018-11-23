@@ -1,0 +1,47 @@
+/* pages/homePage/myWO/finishWO/finishWO.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hr {
+  width: 710rpx;
+  height: 1px;
+  background-color: #e4e4e4;
+  margin-left: 20rpx;
+}
+
+.workFeedback {
+  height: 160rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.workFeedback text {
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  font-size: 28rpx;
+}
+
+textarea {
+  margin-left: 20rpx;
+  margin-top: 25rpx;
+  width: 500rpx;
+  height: 120rpx;
+  font-size: 28rpx;
+}
+
+.placeholder {
+  font-size: 28rpx;
+}
+
+.confirm {
+  margin-top: 45rpx;
+  width: 680rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
+  background-color: #4990e2;
+  color: white;
+}

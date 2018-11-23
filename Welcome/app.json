@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/Welcome/Welcome",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/index-template/index-template"
+  ],
+  "window": {
+    "navigationBarTitleText": "学习小程序",
+    "navigationBarBackgroundColor": "#b3d4db"
+  }
+}

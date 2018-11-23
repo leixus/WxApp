@@ -1,0 +1,149 @@
+/* pages/homePage/myNetwork/addBusEquList/addBusEquList.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.busNetName-bg {
+  height: 120rpx;
+  background-color: #4990e2;
+}
+
+.busNetName {
+  width: 670rpx;
+  height: 160rpx;
+  background-color: white;
+  position: absolute;
+  margin-left: 40rpx;
+  -webkit-box-shadow: 1px 1px 1px;
+  -moz-box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 1px;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.busName {
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 25rpx;
+}
+
+.NetName {
+  font-size: 28rpx;
+  text-align: center;
+  color: #a3a5a8;
+  margin-top: 25rpx;
+}
+
+.addButton {
+  margin-top: 60rpx;
+  display: flex;
+  flex-direction: row;
+  height: 160rpx;
+  background-color: white;
+}
+
+.scanCode {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.cut {
+  margin-top: 20rpx;
+  height: 120rpx;
+  width: 1rpx;
+  background-color: #dadada;
+}
+
+.buttonImg {
+  width: 64rpx;
+  height: 64rpx;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+}
+
+.buttonText {
+  font-size: 32rpx;
+  line-height: 160rpx;
+  margin-left: 30rpx;
+}
+
+.addself {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.equInfo {
+  background-color: white;
+}
+
+.equInfoTitle {
+  height: 100rpx;
+  border-bottom: 1px solid #adadad;
+}
+
+.equInfoText {
+  height: 80rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  margin-left: 25rpx;
+  color: #a3a5a8;
+}
+
+.equInfoContent {
+  height: 80rpx;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+
+.equSerial {
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+}
+
+.equSerialImg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+
+.equSerialText {
+  width: 290rpx;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+
+.equType {
+  width: 310rpx;
+  line-height: 80rpx;
+}
+
+.equTypeText {
+  font-size: 28rpx;
+}
+
+.equDel {
+  width: 15%;
+}
+
+.equDelImg {
+  width: 48rpx;
+  height: 48rpx;
+  margin-top: 16rpx;
+}
+
+.confirm {
+  margin-top: 45rpx;
+  width: 680rpx;
+  background-color: #4990e2;
+  color: white;
+  font-size: 32rpx;
+}

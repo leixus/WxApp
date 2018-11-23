@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <link rel="stylesheet" href="./css/default.css">
+    <title>抽奖页面</title>
+</head>
+<body>
+    <div class="main cj_bg">
+        <p class="cj_p1">恭喜您是第<span id="mingci"></span>位<br>获得“Martini”的尊享用户</p>
+        <p class="cj_p2 cj_pd">您可以凭借领取的号码至活动处<br>
+        享受调酒师为您精心调制的Martini<br>
+        跟随迷人跳动节拍<br>
+        全力感受仿佛置身罗马街头的浪漫气息<br>
+        每人仅限一杯</p>
+        <img src="images/jb.png" style="position: absolute; width: 40%; top: 38vh; left: 7%;">
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/url.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var args = parseUrl(window.location.href)
+            $.ajax({
+                type: "post",
+                url: 'http://ecrm.fendi.cn:8084/API/Fendi/GetDataByOpenId',
+                data: {
+                    openId: args.openId
+                },
+                success: function(response) {
+                    if(response.Status == 'SUCCESS')
+                    {
+                        $('#mingci').text(response.ContextData.Ranking)
+                    }
+                    else if(response.Status == 'WARN'){
+                        alert(response.Message)
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>

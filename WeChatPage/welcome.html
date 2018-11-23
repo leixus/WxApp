@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <link rel="stylesheet" href="./css/default.css">
+    <title>欢迎页面</title>
+</head>
+<body>
+    <div class="main wel">
+        <img src="images/word_1.png" class="explanation">
+        <div class="footer btn_color1">
+            <div id="wel_btn">Enjoy Martini</div>
+            <img src="images/jb.png">
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/url.js"></script>
+    <script>
+        $(function () {
+            var args = parseUrl(window.location.href)
+            $('#wel_btn').on('click',function () {
+                $.ajax({
+                    type: "post",
+                    url: 'http://ecrm.fendi.cn:8084/API/Fendi/GetDataByOpenId',
+                    data: {
+                        openId: args.openId
+                    },
+                    success: function(response) {
+                        if(response.Status == 'SUCCESS')
+                        {
+                            if(response.ContextData)
+                            {
+                                if(response.ContextData.Status == 1)
+                                {
+                                    window.location.href = './info.html?openId=' + args.openId +'&RegistType='+response.ContextData.RegistType
+                                }
+                                else if(response.ContextData.Status == 2)
+                                {
+                                    window.location.href = './lottery.html?openId=' + args.openId
+                                }
+                            }
+                            else
+                            {
+                                window.location.href = './info.html?openId=' + args.openId +'&RegistType=2'
+                            }
+                        }
+                        else if(response.Status == 'WARN'){
+                            alert(response.Message)
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+</html>

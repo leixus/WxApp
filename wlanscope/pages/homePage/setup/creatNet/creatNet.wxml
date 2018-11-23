@@ -1,0 +1,53 @@
+<!--pages/homePage/setup/creatNet/creatNet.wxml-->
+<view class='container'>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker1">
+        当前企业：{{array[index]}}
+      </view>
+      <image class='pickerImg' src='/images/pulldown.png'></image>
+    </picker>
+  </view>
+  <text class='selEquText'>网络基础信息</text>
+  <view class='equInfo'>
+    <view class='equInfoInput'>
+      <view class='equInfoInputText'>
+        <text>网络名称</text>
+      </view>
+      <view class='equInfoInputContent'>
+        <input placeholder='请输入网络名称' placeholder-class="placeholder" bindinput='netNameInput'></input>
+      </view>
+    </view>
+    <view class='equInfoInput'>
+      <view class='equInfoInputText'>
+        <text>所在地址</text>
+      </view>
+      <view class="section">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            {{region[0]}}-{{region[1]}}-{{region[2]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='equInfoInput'>
+      <view class='equInfoInputText'>
+        <text>详细地址</text>
+      </view>
+      <view class='equInfoInputContent'>
+        <input placeholder='如所在道路、园区、楼栋名称等。' placeholder-class="placeholder"></input>
+      </view>
+    </view>
+  </view>
+  <text class='netModeText'>组网类型</text>
+  <view class='netMode'>
+    <view class="network_flex_box">
+      <view class="catalog_items display-flex-row">
+        <block wx:for="{{network}}" wx:for-item="item" wx:key="key" class="network_item">
+          <text data-id="{{item.netTypeId}}" class="{{item.netTypeId == typeSelect ? 'active':''}} catalog_item" bindtap="chooseNetworkType">{{item.netType}}</text>
+        </block>
+      </view>
+    </view>
+  </view>
+  <button class='confirm'>创建网络</button>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/homePage/myNetwork/changePwd/changePwd.wxml-->
+<view class='container'>
+  <view class='wifiName'>
+    <view class='wifiTitle'>WIFI名称</view>
+    <view class='wifiContent'>全维技术9楼</view>
+  </view>
+  <view class='hr'></view>
+  <view class='wifiPwd'>
+    <view class='wifiTitle'>WIFI密码</view>
+    <!-- <input class='wifiPwdInput' wx:if="{{switchValueCheck==true}}"></input> -->
+    <switch class='switch' bindchange='onSwitchTap'></switch>
+  </view>
+  <view class='wifiPwdInput' wx:if="{{switchValueCheck==true}}">
+    <view class='wifiTitle'>WIFI密码</view>
+    <input></input>
+  </view>
+  <button class='confirm'>确定修改</button>
+</view>

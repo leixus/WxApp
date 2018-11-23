@@ -1,0 +1,39 @@
+/* pages/welcome/welcome.wxss */
+
+page {
+  background-color: #4990e2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeTitleImg {
+  margin-top: 45rpx;
+  height: 45rpx;
+  width: 436rpx;
+}
+
+.welcomeImg {
+  width: 627rpx;
+  height: 755rpx;
+  margin-top: 95rpx;
+}
+
+.startUse {
+  height: 62rpx;
+  width: 264rpx;
+  margin-top: 90rpx;
+  opacity: 0;
+  z-index: 999;
+
+}
+
+.startUseImg {
+  height: 46rpx;
+  width: 198rpx;
+  position: absolute;
+  margin-top: 1040rpx;
+}
