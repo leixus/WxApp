@@ -16,7 +16,7 @@
       <image wx:else catchtap="onColletionTap" src="/images/icon/collection-anti.png"></image>
       <image catchtap="onShareTap"  class="share-img" src="/images/icon/share.png"></image>
     </view>
-    <view class="horizon"></view>
+	
   </view>
   <text class="detail">{{postData.detail}}</text>
 </view>

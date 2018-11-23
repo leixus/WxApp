@@ -1,2 +1,29 @@
 <!--pages/index/index-detail/index-detail.wxml-->
-<text>pages/index/index-detail/index-detail.wxml</text>
+<view class="detail-container">
+    <view>
+        <image class='detail-header-img' src='{{postData.headImgSrc}}'></image>
+    </view>
+
+    <view class='detail-information'>
+        <image class='detail-header-name-img' src='{{postData.avatar}}'></image>
+        <text class='detail-header-name'>{{postData.author}}</text>
+        <text class='detail-font-fb'>发表于</text>
+        <text class='detail-header-date'>{{postData.dateTime}}</text>
+    </view> 
+
+    <view class='detail-information'>
+        <text class="detail-title">{{postData.title}}</text>
+    </view> 
+
+    <view class='detail-information'>
+        <view class='circle-img'>
+            <image catchtap="onColletionTap" class='detail-icon-collection' src='/images/icon/collection-anti.png'></image>
+            <image class='detail-icon-share' src='/images/icon/share.png'></image>
+        </view>
+        <view class="horizon"></view>
+    </view> 
+
+    <view class='detail-information'>
+        <text class="detail-text">{{postData.detail}}</text>
+    </view> 
+</view>

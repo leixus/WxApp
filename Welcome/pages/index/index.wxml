@@ -1,7 +1,8 @@
 <import src='index-template/index-template.wxml' />
 
 <view>
-    <swiper class='swiper-container' indicator-dots='true' autoplay="true" interval="2000">
+    <swiper class='swiper-container' indicator-dots='true'>
+    <!-- autoplay="true" interval="2000" -->
         <swiper-item wx:for="{{swiperItem}}" wx:for-item="item" wx:for-index="idx">
             <image src='{{item}}'></image>
         </swiper-item>
