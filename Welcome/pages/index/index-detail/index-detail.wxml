@@ -1,7 +1,8 @@
 <!--pages/index/index-detail/index-detail.wxml-->
 <view class="detail-container">
     <view>
-        <image class='detail-header-img' src='{{postData.headImgSrc}}'></image>
+        <image class='detail-header-img' src='{{isPlayingMusic?postData.music.coverImg:postData.headImgSrc}}'></image>
+        <image catchtap="onMusicTap" class="music-on" src="{{isPlayingMusic?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
     </view>
 
     <view class='detail-information'>
@@ -9,7 +10,7 @@
         <text class='detail-header-name'>{{postData.author}}</text>
         <text class='detail-font-fb'>发表于</text>
         <text class='detail-header-date'>{{postData.dateTime}}</text>
-    </view> 
+    </view>
 
     <view class='detail-information'>
         <text class="detail-title">{{postData.title}}</text>
@@ -17,8 +18,9 @@
 
     <view class='detail-information'>
         <view class='circle-img'>
-            <image catchtap="onColletionTap" class='detail-icon-collection' src='/images/icon/collection-anti.png'></image>
-            <image class='detail-icon-share' src='/images/icon/share.png'></image>
+            <image wx:if="{{collected}}" catchtap="onColletionTap" class='detail-icon-collection' src='/images/icon/collection.png'></image>
+            <image wx:else catchtap="onColletionTap" class='detail-icon-collection' src='/images/icon/collection-anti.png'></image>
+            <image catchtap="onShapeTap" class='detail-icon-share' src='/images/icon/share.png'></image>
         </view>
         <view class="horizon"></view>
     </view> 
