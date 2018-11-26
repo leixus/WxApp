@@ -2,6 +2,6 @@
   <image class='user-images' src='/images/avatar/1.png'></image>
   <text class='motto'>Hello LeiXu</text>
   <view class='journey-container'>
-      <text class='journey' bindtap='onTap'>开启小程序之旅</text>
+      <text class='journey' catchtap='onTap'>开启小程序之旅</text>
   </view>
 </view>

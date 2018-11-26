@@ -1,13 +1,32 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/Welcome/Welcome",
+    "pages/index/index",
     "pages/logs/logs",
     "pages/index/index-template/index-template",
-    "pages/index/index-detail/index-detail"
+    "pages/index/index-detail/index-detail",
+    "pages/movies/movies"
   ],
   "window": {
     "navigationBarTitleText": "学习小程序",
     "navigationBarBackgroundColor": "#b3d4db"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新闻",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
+      }
+    ]
   }
 }
