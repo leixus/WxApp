@@ -12,9 +12,9 @@
         <text class='detail-header-date'>{{postData.dateTime}}</text>
     </view>
 
-    <view class='detail-information'>
-        <text class="detail-title">{{postData.title}}</text>
-    </view> 
+  <view class='detail-information'>
+    <text class="detail-title">{{postData.title}}</text>
+  </view>
 
     <view class='detail-information'>
         <view class='circle-img'>
@@ -24,8 +24,8 @@
         </view>
         <view class="horizon"></view>
     </view> 
-
-    <view class='detail-information'>
-        <text class="detail-text">{{postData.detail}}</text>
-    </view> 
+    
+  <view class='detail-information'>
+    <text class="detail-text">{{postData.detail}}</text>
+  </view>
 </view>

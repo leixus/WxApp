@@ -1,0 +1,7 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <image class='welcomeTitleImg' src='/images/welcomeTitle.png'></image>
+  <image class='welcomeImg' src='/images/welcomeImg.png'></image>
+  <button class='startUse' open-type='getUserInfo' bindgetuserinfo='getUserInfo'></button>
+  <image class='startUseImg' src='/images/startUse.png'></image>
+</view>

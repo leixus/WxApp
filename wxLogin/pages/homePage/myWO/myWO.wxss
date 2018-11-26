@@ -1,0 +1,140 @@
+/* pages/homePage/myWO/myWO.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hr {
+  height: 1px;
+  width: 710rpx;
+  margin-left: 20rpx;
+  background-color: #ebebeb;
+  margin-bottom: 10rpx;
+}
+
+.enginnerInfo-bg {
+  height: 120rpx;
+  background-color: #4990e2;
+}
+
+.enginnerInfo {
+  width: 670rpx;
+  height: 160rpx;
+  background-color: white;
+  position: absolute;
+  margin-left: 40rpx;
+  box-shadow: 1px 1px 1px rgb(201, 201, 201);
+  border-radius: 10rpx;
+}
+
+.enginnerImg {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  margin-left: 80rpx;
+  border-radius: 60rpx;
+}
+
+.enginnerName {
+  margin-left: 50rpx;
+  line-height: 160rpx;
+}
+
+radio-group {
+  margin-top: 55rpx;
+}
+
+.myWO {
+  display: flex;
+  flex-direction: column;
+}
+
+.myWOInfo {
+  height: 385rpx;
+  margin-top: 25rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.WOcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.WO-Bus {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.WO-Bus text {
+  margin-left: 25rpx;
+}
+
+.WOInfo {
+  height: 215rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.finshButton {
+  margin-top: 5rpx;
+  height: 60rpx;
+  font-size: 20rpx;
+  line-height: 60rpx;
+  width: 150rpx;
+  margin-bottom: 20rpx;
+  background-color: #4990e2;
+  color: white;
+  font-weight: 900;
+}
+
+.stateSel {
+  height: 60rpx;
+  border: 2px solid #4990e2;
+  width: 400rpx;
+  margin: auto;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  font-weight: 800;
+  border-radius: 20rpx;
+}
+
+.stateSel1 {
+  width: 200rpx;
+  text-align: center;
+  border-right: 2px solid #4990e2;
+  background-color: #4990e2;
+  color: white;
+}
+
+.stateSel2 {
+  width: 200rpx;
+  text-align: center;
+  color: #4990e2;
+}
+
+.WOdetailContent {
+  margin-top: 10rpx;
+  margin-left: 25rpx;
+  font-size: 26rpx;
+  color: #a3a5a8;
+  display: flex;
+  flex-direction: row;
+}
+
+.WOdetailContentEnd {
+  margin-left: 25rpx;
+  font-size: 26rpx;
+  color: #a3a5a8;
+  display: flex;
+  flex-direction: row;
+}
+
+.WOdetailContentName {
+  width: 150rpx;
+}

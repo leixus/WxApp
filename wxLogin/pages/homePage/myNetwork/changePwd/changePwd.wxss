@@ -1,0 +1,70 @@
+/* pages/homePage/myNetwork/changePwd/changePwd.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wifiName {
+  margin-top: 25rpx;
+  background-color: white;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.hr {
+  height: 1px;
+  width: 710rpx;
+  margin-left: 20rpx;
+  background-color: #ebebeb;
+}
+
+.wifiPwd {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  background-color: white;
+}
+
+.wifiTitle {
+  margin-left: 50rpx;
+  font-weight: 600;
+}
+
+.wifiContent {
+  margin-left: 35rpx;
+  margin-top: 15rpx;
+}
+
+.switch {
+  margin-left: 450rpx;
+}
+
+.wifiPwdInput {
+  margin-top: 25rpx;
+  height: 80rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.wifiPwdInput input {
+  margin-left: 35rpx;
+  margin-top: 15rpx;
+}
+
+.confirm {
+  margin-top: 45rpx;
+  width: 680rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
+  background-color: #4990e2;
+  color: white;
+}

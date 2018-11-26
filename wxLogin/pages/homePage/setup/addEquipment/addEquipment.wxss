@@ -1,0 +1,143 @@
+/* pages/homePage/setup/addEquipment/addEquipment.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.addButton {
+  display: flex;
+  flex-direction: row;
+  height: 160rpx;
+  background-color: white;
+}
+
+.scanCode {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.cut {
+  margin-top: 20rpx;
+  height: 120rpx;
+  width: 1rpx;
+  background-color: #dadada;
+}
+
+.buttonImg {
+  width: 64rpx;
+  height: 64rpx;
+  margin-top: 50rpx;
+  margin-left: 70rpx;
+}
+
+.buttonText {
+  font-size: 32rpx;
+  line-height: 160rpx;
+  margin-left: 30rpx;
+}
+
+.addself {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.selEqu {
+  height: 150rpx;
+  background-color: white;
+}
+
+.selEquText {
+  height: 80rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  margin-left: 25rpx;
+  color: #a3a5a8;
+}
+
+.hr {
+  height: 1px;
+  width: 750rpx;
+  background-color: #d9d9d9;
+}
+
+.equInfo {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.equInfoInput {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10rpx;
+}
+
+.equInfoInputText {
+  width: 150rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.equInfoInputText text {
+  float: left;
+  font-size: 28rpx;
+  margin-left: 25rpx;
+}
+
+.equInfoInputContent {
+  width: 550rpx;
+  height: 100rpx;
+}
+
+.equInfoInputContent input {
+  height: 80rpx;
+}
+
+.placeholder {
+  font-size: 24rpx;
+  opacity: 0.6;
+}
+
+.confirm {
+  margin-top: 45rpx;
+  width: 680rpx;
+  height: 90rpx;
+  background-color: #4990e2;
+  color: white;
+}
+
+.display-flex-row {
+  width: 710rpx;
+  /* padding: 20rpx 0rpx; */
+  font-size: 24rpx;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+  margin-left: 15rpx;
+  margin-top: 25rpx;
+}
+
+.catalog_item {
+  width: 210rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border: 1px solid #a3a5a8;
+  margin-left: 20rpx;
+  /* margin-top: 10rpx; */
+  border-radius: 10rpx;
+  color: #a3a5a8;
+}
+
+.active {
+  color: white;
+  background-color: #4990e2;
+  border: 1px solid #4990e2;
+}

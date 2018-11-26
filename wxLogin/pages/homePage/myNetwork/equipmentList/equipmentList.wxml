@@ -1,0 +1,41 @@
+<!--pages/homePage/myNetwork/equipmentList/equipmentList.wxml-->
+<view class='container'>
+  <view class='busNetName-bg'>
+    <view class='busNetName'>
+      <text class='busName'>{{enterprise}}</text>
+      <text class='NetName'>{{netName}}</text>
+    </view>
+  </view>
+  <view class='equipmentList'>
+    <radio-group bindchange="equipmentChange">
+      <view class='equipmentSel'>
+        <label class="{{equipmentCheckVal=='AP'?'equipmentSel1':'equipmentSel2'}}">AP
+          <radio hidden="true" value='AP'></radio>
+        </label>
+        <label class="{{equipmentCheckVal=='交换机'?'equipmentSel1':'equipmentSel2'}}">交换机
+          <radio hidden="true" value='交换机'></radio>
+        </label>
+        <label class="{{equipmentCheckVal=='网关及其他'?'equipmentSel1':'equipmentSel2'}}">网关及其他
+          <radio hidden="true" value='网关及其他'></radio>
+        </label>
+      </view>
+    </radio-group>
+    <view class='equipmentListInfo'>
+      <block wx:for="{{DeviceList}}" wx:for-item="DeviceList" wx:key="key">
+        <view class='equFunction' wx:if="{{equipmentCheckVal==DeviceList.deviceType}}">
+          <view class='equipmentName'>
+            <view class='equipmentNameImg'>
+              <text class='iconfont icon-luyouqi'></text>
+            </view>
+            <text class='equipmentNameText'>{{DeviceList.deviceSn}}</text>
+          </view>
+          <view class='equipmentRF' bindtap='onRFconfigTap' data-devicesn='{{DeviceList.deviceSn}}'>射频</view>
+          <view class='equipmentReplace' bindtap='equipmentReplaceTap' data-deviceSn='{{DeviceList.deviceSn}}'>替换</view>
+          <view class='equipmentDel'>
+            <text class='iconfont icon-guanbi2' bindtap='delEquTap' data-deviceSn="{{DeviceList.deviceSn}}"></text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

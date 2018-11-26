@@ -1,0 +1,55 @@
+<!--pages/homePage/myWO/myWO.wxml-->
+<view class='container'>
+  <view class='enginnerInfo-bg'>
+    <view class='enginnerInfo'>
+      <image class='enginnerImg' src='{{avatarUrl}}'></image>
+      <text class='enginnerName'>{{nickName}}</text>
+    </view>
+  </view>
+  <radio-group bindchange="WOstateChange">
+    <view class='stateSel'>
+      <label class="{{stateCheckVal=='处理中'?'stateSel1':'stateSel2'}}">处理中
+        <radio hidden="true" value='处理中'></radio>
+      </label>
+      <label class="{{stateCheckVal=='已完结'?'stateSel1':'stateSel2'}}">已完结
+        <radio hidden="true" value='已完结'></radio>
+      </label>
+    </view>
+  </radio-group>
+  <block wx:for="{{WO_List}}" wx:for-item="WOs" wx:key="key">
+    <view class='myWOInfo' wx:if="{{stateCheckVal==WOs.workStatus}}" catchtap='onWOInfoTap' data-workNum='{{WOs.workNum}}'>
+      <view class='WOcontent'>
+        <view class='WO-Bus'>
+          <text>{{WOs.enterprise}}</text>
+        </view>
+        <view class='hr'></view>
+        <view class='WOInfo'>
+          <view class='WOdetailContent'>
+            <view class='WOdetailContentName'>工单号：</view>
+            <view>{{WOs.workNum}}</view>
+          </view>
+          <view class='WOdetailContent'>
+            <view class='WOdetailContentName'>设备类型：</view>
+            <view>{{WOs.deviceType}}</view>
+          </view>
+          <view class='WOdetailContent'>
+            <view class='WOdetailContentName'>设备型号：</view>
+            <view>{{WOs.deviceModelQuantity}}</view>
+          </view>
+          <view class='WOdetailContent'>
+            <view class='WOdetailContentName'>生成时间：</view>
+            <view>{{WOs.createTime}}</view>
+          </view>
+          <view class='WOdetailContent' wx:if="{{WOs.workStatus=='已完结'}}">
+            <view class='WOdetailContentName'>完成时间：</view>
+            <view>{{WOs.endTime}}</view>
+          </view>
+        </view>
+        <view wx:if="{{WOs.workStatus=='处理中'}}">
+          <view class='hr'></view>
+          <button class='finshButton' catchtap='finshWOTap' data-workNum='{{WOs.workNum}}'>结束工单</button>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

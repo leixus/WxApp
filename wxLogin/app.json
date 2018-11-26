@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/homePage/myNetwork/myNetwork",
+    "pages/homePage/setup/addEquToNet/addEquToNet",
+    "pages/homePage/setup/setup",
+    "pages/homePage/myWO/WOdetail/WOdetail",
+    "pages/homePage/myWO/finishWO/finishWO",
+    "pages/homePage/setup/creatNet/creatNet",
+    "pages/welcome/welcome",
+    "pages/homePage/setup/addEquipment/addEquipment",
+    "pages/homePage/myNetwork/RFconfig/RFconfig",
+    "pages/homePage/myNetwork/equipmentList/equipmentList",
+    "pages/homePage/myWO/myWO",
+    "pages/homePage/myNetwork/changePwd/changePwd",
+    "pages/homePage/setup/addEquipmentList/addEquipmentList",
+    "pages/homePage/myNetwork/netRename/netRename",
+    "pages/homePage/setup/aboutAC/aboutAC"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4990e2",
+    "navigationBarTitleText": "无限云",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "#f3f3f4",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/homePage/setup/setup",
+        "text": "快速组网",
+        "iconPath": "images/setupun.png",
+        "selectedIconPath": "images/setup.png",
+        "selectedColor": "#4990e2"
+      },
+      {
+        "pagePath": "pages/homePage/myNetwork/myNetwork",
+        "text": "我的网络",
+        "iconPath": "images/myNetun.png",
+        "selectedIconPath": "images/myNet.png",
+        "selectedColor": "#4990e2"
+      },
+      {
+        "pagePath": "pages/homePage/myWO/myWO",
+        "text": "我的工单",
+        "iconPath": "images/myWOun.png",
+        "selectedIconPath": "images/myWO.png",
+        "selectedColor": "#4990e2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+<!--pages/homePage/setup/addEquipmentList/addEquipmentList.wxml-->
+<view class='container'>
+  <!-- 从我的网络中添加设备，传递参数获取到netId显示此模块-->
+  <view class='busNetName-bg' wx:if="{{netId!=='0'}}">
+    <view class='busNetName'>
+      <text class='busName'>{{enterprise}}</text>
+      <text class='NetName'>{{netName}}</text>
+    </view>
+  </view>
+  <view class='addButton'>
+    <view class='scanCode' bindtap='onCodeTap'>
+      <view class='buttonImg'>
+        <text class='iconfont icon-erweima'></text>
+      </view>
+      <text class='buttonText'>扫码添加</text>
+    </view>
+    <view class='cut'></view>
+    <view class='addself' bindtap='onAddselfTap'>
+      <view class='buttonImg'>
+        <text class='iconfont icon-shuru'></text>
+      </view>
+      <text class='buttonText'>手动添加</text>
+    </view>
+  </view>
+  <text class='equInfoText'>设备类型</text>
+  <view class='equInfo'>
+    <view class='equInfoContent' wx:for="{{equipmentList}}" wx:for-item="item" wx:key="key">
+      <view class='equSerial'>
+        <text class='iconfont icon-luyouqi'></text>
+        <text class='equSerialText'>{{item.deviceSn}}</text>
+      </view>
+      <view class='equType'>
+        <text class='equTypeText'>{{item.deviceType}}</text>
+      </view>
+      <view class='equDel' bindtap='equDel' data-deviceSn='{{item.deviceSn}}'>
+        <view class='equDelImg'>
+          <text class='iconfont icon-guanbi'></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 从我的网络中添加设备，传递参数获取到netId显示此按钮 -->
+  <button class='confirm' bindtap='upEquListTap' wx:if="{{netId!=='0'}}">确定</button>
+  <button class='confirm' bindtap='addOnlineNet' wx:if="{{netId=='0'}}">添加到已有网络</button>
+  <button class='confirm' bindtap='addNewNet' wx:if="{{netId=='0'}}">添加到新网络</button>
+  <text class='PS'>注：设备联网后，一般5分钟内上线</text>
+</view>

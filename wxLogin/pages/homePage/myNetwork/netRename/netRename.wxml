@@ -1,0 +1,10 @@
+<!--pages/homePage/myNetwork/netRename/netRename.wxml-->
+<view class='container'>
+  <view class='netRename'>
+    <view class='netNameTitle'>网络名称：</view>
+    <view class='netNameInput'>
+      <input placeholder='全维技术9楼' placeholder-class='placeholder' bindinput='newNameInput'></input>
+    </view>
+  </view>
+  <button class='confirm' bindtap='netRenameTap'>确定修改</button>
+</view>
