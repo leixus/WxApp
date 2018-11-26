@@ -1,0 +1,39 @@
+/* pages/homePage/myNetwork/netRename/netRename.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.netRename {
+  height: 80rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25rpx;
+}
+
+.netNameTitle {
+  line-height: 80rpx;
+  margin-left: 40rpx;
+  font-size: 32rpx;
+}
+
+.netNameInput input {
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+}
+
+.placeholder {
+  font-size: 28rpx;
+}
+
+.confirm {
+  margin-top: 45rpx;
+  width: 680rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
+  background-color: #4990e2;
+  color: white;
+}

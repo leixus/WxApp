@@ -1,0 +1,59 @@
+<!--pages/homePage/myNetwork/myNetwork.wxml-->
+<view class='container'>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{enterpriseList}}" range-key='name'>
+      <view class="picker1">
+        当前企业：{{enterpriseList[index].name}}
+      </view>
+      <view class='pickerImg'>
+        <text class='iconfont icon-xiala'></text>
+      </view>
+    </picker>
+  </view>
+  <!-- 如果没网络 -->
+  <view class='ifNoNet' wx:if="{{isEmpty=='true'}}">
+    <image class='NoNetImg' src='/images/NoNet.png'></image>
+    <text class='NoNetText'>当前企业无网络</text>
+  </view>
+  <button class='confirm' wx:if="{{isEmpty=='true'}}" bindtap='toCreatNet'>去创建网络</button>
+
+
+
+  <!-- 如果有网络  -->
+  <view class='creatNet' bindtap='toCreatNet' wx:if="{{isEmpty=='false'}}">
+    <view class='addNet'>
+      <text class='iconfont icon-tianjia'></text>
+      <text class='addNetText'>去创建网络</text>
+    </view>
+  </view>
+  <view class='netList' wx:for="{{NetList}}" wx:for-item="nets" wx:key="key">
+    <view class='netListTitle'>
+      <text class='netListTitleText'>{{nets.netName}}</text>
+      <view class='moreFunctionImg'>
+        <text class='iconfont icon-gengduo' bindtap='onSettingTap' data-netid='{{nets.netId}}'></text>
+      </view>
+    </view>
+    <view class='hr'></view>
+    <view class='netListInfo'>
+      <view class='detailAddress'>
+        <text class='netListInfoName'>详细地址：</text>
+        <textarea disabled='true' placeholder-class='placeholder'>{{nets.province}}{{nets.city}}{{nets.county}}{{nets.detailAddress}}</textarea>
+      </view>
+      <view class='netType'>
+        <text class='netListInfoName'>组网类型：</text>
+        <text>{{nets.netType}}</text>
+      </view>
+    </view>
+    <view class='hr'></view>
+    <view class='equFunction'>
+      <view class='checkEqu' bindtap='onCheckTap' data-netid="{{nets.netId}}">
+        <text class='iconfont icon-chakan'></text>
+        <text>查看设备</text>
+      </view>
+      <view class='addEqu' bindtap='addEquipmentTap' data-netid="{{nets.netId}}">
+        <text class='iconfont icon-icon-test'></text>
+        <text>添加设备</text>
+      </view>
+    </view>
+  </view>
+</view>

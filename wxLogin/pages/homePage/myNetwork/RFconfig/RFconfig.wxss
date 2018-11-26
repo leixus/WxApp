@@ -1,0 +1,99 @@
+/* pages/homePage/myNetwork/RFconfig/RFconfig.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.busNetName-bg {
+  height: 120rpx;
+  background-color: #4990e2;
+}
+
+.busNetName {
+  width: 670rpx;
+  height: 160rpx;
+  background-color: white;
+  position: absolute;
+  margin-left: 40rpx;
+  -webkit-box-shadow: 1px 1px 1px;
+  -moz-box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 1px;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.busName {
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 25rpx;
+}
+
+.NetName {
+  font-size: 28rpx;
+  text-align: center;
+  color: #a3a5a8;
+  margin-top: 25rpx;
+}
+
+.RFInfo {
+  margin-top: 70rpx;
+  height: 880rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+
+.equipmentName {
+  background-color: white;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.equImg {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.equipmentName input {
+  width: 400rpx;
+  margin-left: 20rpx;
+}
+
+.placeholder {
+  color: rgb(97, 97, 97);
+}
+
+.RFContent {
+  background-color: white;
+}
+
+.RFContentPicker {
+  width: 400rpx;
+  height: 75rpx;
+  margin-left: 40rpx;
+}
+
+.RFContentTitle {
+  height: 60rpx;
+  margin-left: 25rpx;
+  line-height: 60rpx;
+}
+
+.confirm {
+  width: 680rpx;
+  height: 90rpx;
+  background-color: #4990e2;
+  color: white;
+}
+
+.hr {
+  height: 1px;
+  width: 710rpx;
+  margin-left: 20rpx;
+  background-color: #ebebeb;
+}

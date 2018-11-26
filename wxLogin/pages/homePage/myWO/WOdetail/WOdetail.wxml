@@ -1,0 +1,48 @@
+<!--pages/homePage/myWO/WOdetail/WOdetail.wxml-->
+<view class='container'>
+  <view class='installResult-bg'>
+    <view class='installResult'>
+      <view class='successImg' wx:if="{{WOdetail.installResult=='正在处理'}}">
+        <text class='iconfont icon-chulizhong'></text>
+      </view>
+      <view class='successImg' wx:if="{{WOdetail.installResult=='安装异常'}}">
+        <text class='iconfont icon-jinggao'></text>
+      </view>
+      <view class='successImg' wx:if="{{WOdetail.installResult=='成功安装'}}">
+        <text class='iconfont icon-chenggong'></text>
+      </view>
+      <text class='installResultText'>{{WOdetail.installResult}}</text>
+    </view>
+  </view>
+  <view class='WOdetailInfo'>
+    <view class='WOdetailBus'>{{WOdetail.enterprise}}</view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>工单号：</view>
+      <view>{{WOdetail.workNum}}</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>设备类型：</view>
+      <view>{{WOdetail.deviceType}}</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>设备型号：</view>
+      <view>{{WOdetail.deviceModelQuantity}}</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>生成时间：</view>
+      <view>{{WOdetail.createTime}}</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>完成时间：</view>
+      <view>{{WOdetail.endTime}}</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>责任人：</view>
+      <view>{{WOdetail.responsible}}</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>工单反馈：</view>
+      <textarea class='WOdetailContentResult' placeholder='{{WOdetail.workFeedback}}' placeholder-class='placeholder' disabled='true'></textarea>
+    </view>
+  </view>
+</view>

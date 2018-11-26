@@ -1,0 +1,47 @@
+/**app.wxss**/
+
+@import 'style/iconfont.wxss';
+
+page {
+  background-color: #f6f6f6;
+  height: 100%;
+}
+
+.section {
+  background-color: white;
+  margin-top: 25rpx;
+}
+
+.picker1 {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 25rpx;
+}
+
+.pickerSelect {
+  border: 1px solid #d9d9d9;
+  width: 300rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+}
+
+.pickerImg {
+  width: 64rpx;
+  height: 64rpx;
+  position: absolute;
+  margin-top: -70rpx;
+  margin-left: 660rpx;
+}
+
+.PS {
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #a3a5a8;
+}

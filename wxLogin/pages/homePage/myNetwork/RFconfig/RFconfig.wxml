@@ -1,0 +1,110 @@
+<!--pages/homePage/myNetwork/RFconfig/RFconfig.wxml-->
+<view class='container'>
+  <view class='busNetName-bg'>
+    <view class='busNetName'>
+      <text class='busName'>杭州全维技术有限公司</text>
+      <text class='NetName'>全维8楼研发组wifi</text>
+    </view>
+  </view>
+  <view class='RFInfo'>
+    <view class='equipmentName'>
+      <view class='equImg'>
+        <text class='iconfont icon-luyouqi'></text>
+      </view>
+      <input placeholder='{{deviceSn}}' placeholder-class='placeholder'></input>
+    </view>
+    <view class='RF2G'>
+      <text class='RFContentTitle'>2G</text>
+      <view class="RFContent">
+        <picker bindchange="bindTwoInformationChange" value="{{twoInformationIndex}}" range="{{config2gChannel}}">
+          <view class="picker1">
+            信道：{{twoInformationContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindTwoPowerChange" value="{{twoPowerIndex}}" range="{{config2gPowerDbm}}">
+          <view class="picker1">
+            功率：{{twoPowerContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindTwoBandwidthChange" value="{{twoBandwidthIndex}}" range="{{config2gBandwidth}}">
+          <view class="picker1">
+            频宽：{{twoBandwidthContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='RF5G'>
+      <text class='RFContentTitle'>5G</text>
+      <view class="RFContent">
+        <picker bindchange="bindFiveInformationChange" value="{{fiveInformationIndex}}" range="{{config5gChannel}}">
+          <view class="picker1">
+            信道：{{fiveInformationContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindFivePowerChange" value="{{fivePowerIndex}}" range="{{config5gPowerDbm}}">
+          <view class="picker1">
+            功率：{{fivePowerContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindFiveBandwidthChange" value="{{fiveBandwidthIndex}}" range="{{config5gBandwidth}}">
+          <view class="picker1">
+            频宽：{{fiveBandwidthContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindFieldStrengthChange" value="{{fieldStrengthIndex}}" range="{{fieldsStrengthThreshold}}">
+          <view class="picker1">
+            场强阈值：{{fieldStrengthContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindRateChange" value="{{rateIndex}}" range="{{apRateThreshold}}">
+          <view class="picker1">
+            速率阈值：{{rateContent}}
+          </view>
+          <view class='pickerImg'>
+            <text class='iconfont icon-xiala'></text>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <button class='confirm' bindtap='changeRFTap'>确定</button>
+</view>
