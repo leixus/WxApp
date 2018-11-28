@@ -1,0 +1,14 @@
+<!--pages/movies/star/star.wxml-->
+<!-- <text>pages/movies/star/star.wxml</text> -->
+<template name="movieStar">
+  <view class="star-container">
+    <view class="stars">
+      <image class="star-img" src='/images/icon/star.png'></image>
+      <image class="star-img" src='/images/icon/star.png'></image>
+      <image class="star-img" src='/images/icon/star.png'></image>
+      <image class="star-img" src='/images/icon/star.png'></image>
+      <image class="star-img" src='/images/icon/star.png'></image>
+    </view>
+    <text class="star-score">7</text>
+  </view>
+</template>

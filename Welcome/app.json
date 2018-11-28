@@ -5,7 +5,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/index/index-template/index-template",
-    "pages/index/index-detail/index-detail"
+    "pages/index/index-detail/index-detail",
+    "pages/movies/star/star"
   ],
   "window": {
     "navigationBarTitleText": "学习小程序",
@@ -14,6 +15,7 @@
   "tabBar": {
     "borderStyle": "white",
     "position": "bottom",
+    "selectedColor": "#1F4BA5",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -24,6 +26,7 @@
       {
         "pagePath": "pages/movies/movies",
         "text": "电影",
+        "selectedColor": "#fff",
         "iconPath": "images/tab/dianying.png",
         "selectedIconPath": "images/tab/dianying_hl.png"
       }
