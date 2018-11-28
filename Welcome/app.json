@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/movies/movies",
     "pages/Welcome/Welcome",
     "pages/index/index",
     "pages/logs/logs",
     "pages/index/index-template/index-template",
-    "pages/index/index-detail/index-detail",
-    "pages/movies/movies"
+    "pages/index/index-detail/index-detail"
   ],
   "window": {
     "navigationBarTitleText": "学习小程序",
