@@ -1,0 +1,12 @@
+<import src="../star/star.wxml" />
+
+<template name="movieContent">
+  <view class="good-film">
+    <!-- <image class="movie-film" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg"></image>
+    <text class="movie-title">我不是药神</text>
+    <template is="movieStar" /> -->
+    <image class="movie-film" src="{{coverageUrl}}"></image>
+    <text class="movie-title">{{title}}</text>
+    <template is="movieStar" data="{{stars:stars, score: average}}" />
+  </view>
+</template>

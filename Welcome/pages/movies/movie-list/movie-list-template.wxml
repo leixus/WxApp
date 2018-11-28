@@ -1,24 +1,29 @@
-<import src="../star/star.wxml" />
+<import src="../movie-content/movie-content.wxml" />
 
 <template name="movieListTemplate">
   <view class="movie-list-container">
-
     <view class="inner-container">
-
       <view class="movie-head">
         <view>
-          <text class="slogan">正在上映</text>
+          <text class="slogan">{{categoryTitle}}</text>
         </view>
 
-        <view>
+        <view catchtap="onMoreTap" data-category="{{categoryTitle}}">
           <text class="more-text">更多</text>
           <image class="more-img" src="/images/icon/arrow-right.png"></image>
         </view>
       </view>
 
       <view class="movies-container">
+        <block wx:for="{{movies}}" wx:for-item="movie">
+          <template is="movieContent" data="{{...movie}}" />
 
-        <view class="good-film">
+          <!-- <template is="movieContent" data="{{movie}}" />
+
+          <template is="movieContent" data="{{movies}}" /> -->
+        </block>
+
+        <!-- <view class="good-film">
           <image class="movie-film" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg"></image>
           <text class="movie-title">我不是药神</text>
           <template is="movieStar" />
@@ -34,7 +39,7 @@
           <image class="movie-film" src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.jpg"></image>
           <text class="movie-title">我不是药神</text>
           <template is="movieStar" />
-        </view>
+        </view> -->
 
       </view>
     </view>

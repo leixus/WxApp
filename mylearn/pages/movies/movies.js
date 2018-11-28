@@ -109,5 +109,6 @@ Page({
       movies: movies
     }
     this.setData(readyData);
+    console.log(this.data.readyData);
   }
 })

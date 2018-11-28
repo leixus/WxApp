@@ -1,16 +1,15 @@
-@import "../star/star.wxss";
-
+@import "../movie-content/movie-content.wxss";
 .movie-list-container {
   background-color: #fff;
   display: flex;
   flex-direction: column;
 }
 
-.inner-container{
-  /* display: flex;
-  flex-direction: row; */
-  /* margin: 0  auto 20rpx; */
-}
+/* .inner-container{
+  display: flex;
+  flex-direction: row; 
+  margin: 0  auto 20rpx;
+} */
 
 .movie-head{
   display: flex;
@@ -45,20 +44,3 @@
   /* border: 1px solid #ccc; */
 }
 
-.good-film{
-  display: flex;
-  flex-direction: column;
-  padding: 0 18rpx;
-}
-
-.movie-film{
-  width: 200rpx;
-  height: 270rpx;
-  padding-bottom: 24rpx;
-
-}
-
-.movie-title{
-    margin-bottom: 16rpx;
-    font-size: 24rpx;
-}

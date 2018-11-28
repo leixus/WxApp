@@ -6,10 +6,9 @@
     "pages/logs/logs",
     "pages/index/index-template/index-template",
     "pages/index/index-detail/index-detail",
-    "pages/movies/star/star"
+    "pages/movies/more-movies/more-movies"
   ],
   "window": {
-    "navigationBarTitleText": "学习小程序",
     "navigationBarBackgroundColor": "#b3d4db"
   },
   "tabBar": {

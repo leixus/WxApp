@@ -1,0 +1,9 @@
+<!--pages/movies/more-movies/more-movies.wxml-->
+<!-- <text>pages/movies/more-movies/more-movies.wxml</text> -->
+
+<import src="../movie-content/movie-content.wxml" />
+<!-- <block wx:for="{{movies}}" wx:for-item="movie">
+  <template is="movieContent" data="{{...movie}}" />
+</block> -->
+
+111
