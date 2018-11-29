@@ -1,0 +1,173 @@
+/* pages/homePage/myNetwork/myNetwork.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.business {
+  margin-top: 20rpx;
+  background-color: white;
+  height: 60rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.creatNet {
+  margin-top: 20rpx;
+  background-color: white;
+  height: 80rpx;
+}
+
+.addNet {
+  line-height: 80rpx;
+}
+
+.addNetImg {
+  height: 34rpx;
+  width: 34rpx;
+  margin-left: 270rpx;
+  vertical-align: middle;
+}
+
+.addNetText {
+  font-size: 28rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.placeholder {
+  font-size: 26rpx;
+  color: #a3a5a8;
+}
+
+.netList {
+  background-color: white;
+  margin-top: 25rpx;
+  height: 305rpx;
+}
+
+.netListTitle {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.moreFunctionImg {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 420rpx;
+}
+
+.netListTitle text {
+  line-height: 80rpx;
+  margin-left: 25rpx;
+}
+
+.hr {
+  height: 1px;
+  width: 710rpx;
+  margin-left: 20rpx;
+  background-color: #ebebeb;
+}
+
+.netListInfo {
+  height: 145rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  color: #a3a5a8;
+}
+
+.detailAddress {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+}
+
+.netListInfoName {
+  margin-left: 25rpx;
+  margin-top: 15rpx;
+  width: 150rpx;
+}
+
+textarea {
+  margin-top: 15rpx;
+  height: 65rpx;
+  margin-left: 5rpx;
+  width: 500rpx;
+}
+
+.netType {
+  display: flex;
+  flex-direction: row;
+}
+
+.netType text {
+  margin-top: 15rpx;
+}
+
+.equFunction {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkEqu {
+  margin-top: 15rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  width: 170rpx;
+  border: 1rpx solid #a3a5a8;
+  border-radius: 10rpx;
+  margin-left: 335rpx;
+  display: flex;
+  flex-direction: row;
+  color: #a3a5a8;
+  font-size: 26rpx;
+}
+
+.addEqu {
+  margin-top: 15rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  width: 170rpx;
+  border: 1rpx solid #a3a5a8;
+  border-radius: 10rpx;
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: row;
+  color: #a3a5a8;
+  font-size: 26rpx;
+}
+
+.functionImg {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+}
+
+.ifNoNet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NoNetImg {
+  width: 268rpx;
+  height: 164rpx;
+  margin-top: 260rpx;
+}
+
+.NoNetText {
+  margin-top: 45rpx;
+}
+
+.confirm {
+  margin-top: 45rpx;
+  width: 680rpx;
+  background-color: #4990e2;
+  color: white;
+}

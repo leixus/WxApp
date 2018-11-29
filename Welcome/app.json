@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/Welcome/Welcome",
+    "pages/movies/movies",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index/index-template/index-template",
+    "pages/index/index-detail/index-detail",
+    "pages/movies/more-movies/more-movies"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#b3d4db"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "selectedColor": "#1F4BA5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新闻",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "selectedColor": "#fff",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

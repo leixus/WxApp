@@ -1,0 +1,83 @@
+<!--pages/homePage/myNetwork/myNetwork.wxml-->
+<view class='container'>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker1">
+        当前企业：{{array[index]}}
+      </view>
+      <image class='pickerImg' src='/images/pulldown.png'></image>
+    </picker>
+  </view>
+  <!-- 如果没网络 -->
+  <!-- <view class='ifNoNet'>
+    <image class='NoNetImg' src='/images/NoNet.png'></image>
+    <text class='NoNetText'>当前企业无网络</text>
+  </view>
+  <button class='confirm'>去创建网络</button>
+ -->
+
+
+  <!-- 如果有网络 -->
+  <view class='creatNet' bindtap='toCreatNet'>
+    <view class='addNet'>
+      <image class='addNetImg' src='/images/addNet.png'></image>
+      <text class='addNetText'>去创建网络</text>
+    </view>
+  </view>
+  <view class='netList'>
+    <view class='netListTitle'>
+      <text>全维8楼组网1</text>
+      <image class='moreFunctionImg' src='/images/more.png' bindtap='onSettingTap'></image>
+    </view>
+    <view class='hr'></view>
+    <view class='netListInfo'>
+      <view class='detailAddress'>
+        <text class='netListInfoName'>详细地址：</text>
+        <textarea disabled='true' placeholder-class='placeholder'>浙江省杭州市西湖区西斗门路3号天堂软件园D座8楼 </textarea>
+      </view>
+      <view class='netType'>
+        <text class='netListInfoName'>组网类型：</text>
+        <text>适配器+交换机+AP</text>
+      </view>
+    </view>
+    <view class='hr'></view>
+    <view class='equFunction'>
+      <view class='checkEqu' bindtap='onCheckTap'>
+        <image class='functionImg' src='/images/check.png'></image>
+        <text>查看设备</text>
+      </view>
+      <view class='addEqu' bindtap='addEquipmentTap'>
+        <image class='functionImg' src='/images/addEqu.png'></image>
+        <text>添加设备</text>
+      </view>
+    </view>
+  </view>
+  <view class='netList'>
+    <view class='netListTitle'>
+      <text>全维8楼组网2</text>
+      <image class='moreFunctionImg' src='/images/more.png' bindtap='onSettingTap'></image>
+    </view>
+    <view class='hr'></view>
+    <view class='netListInfo'>
+      <view class='detailAddress'>
+        <text class='netListInfoName'>详细地址：</text>
+        <textarea disabled='true' placeholder-class='placeholder'>浙江省杭州市西湖区西斗门路3号天堂软件园D座8楼</textarea>
+      </view>
+      <view class='netType'>
+        <text class='netListInfoName'>组网类型：</text>
+        <text>仅AP</text>
+      </view>
+    </view>
+    <view class='hr'></view>
+    <view class='equFunction'>
+      <view class='checkEqu' bindtap='onCheckTap'>
+        <image class='functionImg' src='/images/check.png'></image>
+        <text>查看设备</text>
+      </view>
+      <view class='addEqu' bindtap='addEquipmentTap'>
+        <image class='functionImg' src='/images/addEqu.png'></image>
+        <text>添加设备</text>
+      </view>
+    </view>
+  </view>
+</view>

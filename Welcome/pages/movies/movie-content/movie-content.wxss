@@ -1,0 +1,18 @@
+@import "../star/star.wxss";
+.good-film{
+  display: flex;
+  flex-direction: column;
+  padding: 0 18rpx;
+}
+
+.movie-film{
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 24rpx;
+
+}
+
+.movie-title{
+    margin-bottom: 16rpx;
+    font-size: 24rpx;
+}

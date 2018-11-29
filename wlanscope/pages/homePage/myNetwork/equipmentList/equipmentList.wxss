@@ -1,0 +1,141 @@
+/* pages/homePage/myNetwork/equipmentList/equipmentList.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.busNetName-bg {
+  height: 120rpx;
+  background-color: #4990e2;
+}
+
+.busNetName {
+  width: 670rpx;
+  height: 160rpx;
+  background-color: white;
+  position: absolute;
+  margin-left: 40rpx;
+  -webkit-box-shadow: 1px 1px 1px;
+  -moz-box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 1px;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.busName {
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 25rpx;
+}
+
+.NetName {
+  font-size: 28rpx;
+  text-align: center;
+  color: #a3a5a8;
+  margin-top: 25rpx;
+}
+
+.equipmentList {
+  margin-top: 75rpx;
+}
+
+.equipmentSel {
+  height: 60rpx;
+  border: 2px solid #4990e2;
+  border-right: 0rpx;
+  width: 600rpx;
+  margin: auto;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  font-weight: 800;
+  border-radius: 10rpx;
+}
+
+.equipmentSel1 {
+  width: 205rpx;
+  text-align: center;
+  background-color: #4990e2;
+  color: white;
+}
+
+.equipmentSel2 {
+  width: 205rpx;
+  text-align: center;
+  color: #4990e2;
+  border-right: 2px solid #4990e2;
+}
+
+.equipmentListInfo {
+  margin-top: 35rpx;
+  background-color: white;
+}
+
+.equipment {
+  display: flex;
+  flex-direction: column;
+}
+
+.equFunction {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.equipmentName {
+  height: 80rpx;
+  width: 465rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.equipmentNameImg {
+  height: 48rpx;
+  width: 48rpx;
+  margin-top: 16rpx;
+  margin-left: 20rpx;
+}
+
+.equipmentNameText {
+  line-height: 80rpx;
+  margin-left: 25rpx;
+  font-size: 28rpx;
+}
+
+.equipmentRF {
+  width: 100rpx;
+  height: 60rpx;
+  border: 1px solid #4990e2;
+  margin-top: 10rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+  background-color: #4990e2;
+  color: white;
+  border-radius: 10rpx;
+}
+
+.equipmentReplace {
+  margin-left: 10rpx;
+  width: 100rpx;
+  height: 60rpx;
+  border: 1px solid #a3a5a8;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #a3a5a8;
+}
+
+.equipmentDel {
+  margin-left: 10rpx;
+  height: 48rpx;
+  width: 48rpx;
+  margin-top: 16rpx;
+}

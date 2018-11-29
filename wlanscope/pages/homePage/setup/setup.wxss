@@ -1,0 +1,47 @@
+/* pages/homePage/setup/setup.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.function {
+  border-radius: 15rpx;
+  margin-left: 30rpx;
+  width: 690rpx;
+  margin-top: 35rpx;
+  height: 320rpx;
+  border: 1px solid #d1d1d1;
+  -webkit-box-shadow: 1px 1px 1px;
+  -moz-box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 1px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: relative;
+}
+
+.functionText {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+  margin-top: 100rpx;
+  width: 300rpx;
+}
+
+.functionText1 {
+  font-size: 50rpx;
+}
+
+.functionText2 {
+  margin-top: 20rpx;
+  font-size: 20rpx;
+  color: #797878;
+}
+
+.functionImg {
+  width: 460rpx;
+  height: 320rpx;
+  margin-left: 220rpx;
+}

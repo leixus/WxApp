@@ -1,0 +1,92 @@
+<!--pages/homePage/myNetwork/RFconfig/RFconfig.wxml-->
+<view class='container'>
+  <view class='busNetName-bg'>
+    <view class='busNetName'>
+      <text class='busName'>杭州全维技术有限公司</text>
+      <text class='NetName'>全维8楼研发组wifi</text>
+    </view>
+  </view>
+  <view class='RFInfo'>
+    <view class='equipmentName'>
+      <image class='equImg' src='/images/router.png'></image>
+      <text>XL783729soiw989</text>
+    </view>
+    <view class='RF2G'>
+      <text class='RFContentTitle'>2G</text>
+      <view class="RFContent">
+        <picker bindchange="bindTwoInformationChange" value="{{twoInformationIndex}}" range="{{twoInformation}}">
+          <view class="picker1">
+            信道：{{twoInformation[twoInformationIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindTwoPowerChange" value="{{twoPowerIndex}}" range="{{twoPower}}">
+          <view class="picker1">
+            功率：{{twoPower[twoPowerIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindTwoBandwidthChange" value="{{twoBandwidthIndex}}" range="{{twoBandwidth}}">
+          <view class="picker1">
+            频宽：{{twoBandwidth[twoBandwidthIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+    </view>
+    <view class='RF5G'>
+      <text class='RFContentTitle'>5G</text>
+      <view class="RFContent">
+        <picker bindchange="bindFiveInformationChange" value="{{fiveInformationIndex}}" range="{{fiveInformation}}">
+          <view class="picker1">
+            信道：{{fiveInformation[fiveInformationIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindFivePowerChange" value="{{fivePowerIndex}}" range="{{fivePower}}">
+          <view class="picker1">
+            功率：{{fivePower[fivePowerIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindFiveBandwidthChange" value="{{fiveBandwidthIndex}}" range="{{fiveBandwidth}}">
+          <view class="picker1">
+            频宽：{{fiveBandwidth[fiveBandwidthIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindFieldStrengthChange" value="{{fieldStrengthIndex}}" range="{{fieldStrength}}">
+          <view class="picker1">
+            场强阈值：{{fieldStrength[fieldStrengthIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+      <view class='hr'></view>
+      <view class="RFContent">
+        <picker bindchange="bindRateChange" value="{{rateIndex}}" range="{{rate}}">
+          <view class="picker1">
+            速率阈值：{{rate[rateIndex]}}
+          </view>
+          <image class='pickerImg' src='/images/pulldown.png'></image>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <button class='confirm'>确定</button>
+</view>

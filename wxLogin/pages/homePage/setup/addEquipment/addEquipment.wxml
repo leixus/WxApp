@@ -1,0 +1,63 @@
+<!--pages/homePage/setup/addEquipment/addEquipment.wxml-->
+<view class='container'>
+  <view class='addButton'>
+    <view class='scanCode' bindtap='onCodeTap'>
+      <view class='buttonImg'>
+        <text class='iconfont icon-erweima'></text>
+      </view>
+      <text class='buttonText'>扫码添加</text>
+    </view>
+    <view class='cut'></view>
+    <view class='addself' bindtap='onAddselfTap'>
+      <view class='buttonImg'>
+        <text class='iconfont icon-shuru'></text>
+      </view>
+      <text class='buttonText'>手动添加</text>
+    </view>
+  </view>
+  <text class='selEquText'>设备类型</text>
+  <view class='selEqu'>
+    <view class="catalog_items display-flex-row">
+      <block wx:for="{{devicesType}}" wx:for-item="item" wx:key="key">
+        <text class='' data-deviceTypeId="{{item.deviceTypeId}}" class="{{item.deviceTypeId == typeSelect ? 'active':''}} catalog_item" bindtap="chooseDeviceType">{{item.deviceType}}</text>
+      </block>
+    </view>
+  </view>
+  <text class='selEquText'>设备信息</text>
+  <view class='equInfo'>
+    <view class='equInfoInput'>
+      <view class='equInfoInputText'>
+        <text>设备名称</text>
+      </view>
+      <view class='equInfoInputContent'>
+        <input placeholder-class="placeholder" bindinput='deviceNameInput'></input>
+      </view>
+    </view>
+    <view class='equInfoInput'>
+      <view class='equInfoInputText'>
+        <text>序列名</text>
+      </view>
+      <view class='equInfoInputContent'>
+        <input placeholder='必填项' placeholder-class="placeholder" focus='{{focus}}' bindinput='deviceSnInput' bindconfirm='getDeviceModel'></input>
+      </view>
+    </view>
+    <view class='equInfoInput'>
+      <view class='equInfoInputText'>
+        <text>设备型号</text>
+      </view>
+      <view class='equInfoInputContent'>
+        <input placeholder-class="placeholder" bindinput='deviceModelInput' disabled='true'></input>
+      </view>
+    </view>
+    <view class='equInfoInput'>
+      <view class='equInfoInputText'>
+        <text>MAC地址</text>
+      </view>
+      <view class='equInfoInputContent'>
+        <input placeholder-class="placeholder" bindinput='deviceMacInput'></input>
+      </view>
+    </view>
+  </view>
+  <button class='confirm' bindtap='onAddEquToNetTap'>添加设备</button>
+  <text class='PS'>注：设备联网后，一般5分钟内上线</text>
+</view>

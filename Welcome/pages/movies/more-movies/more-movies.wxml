@@ -1,0 +1,13 @@
+<import src="../movie-content/movie-content.wxml" />
+
+<!-- <block wx:for="{{movies}}" wx:for-item="movie">
+  <template is="movieContent" data="{{...movie}}" />
+</block> -->
+
+<view class="grid-container">
+  <block wx:for="{{movies}}" wx:for-item="movie">
+    <view class="single-view-container">
+      <template is="movieContent" data="{{...movie}}" />
+    </view>
+  </block>
+</view>

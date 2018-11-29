@@ -1,0 +1,24 @@
+<!--pages/homePage/setup/setup.wxml-->
+<view class='container'>
+  <view class='function' bindtap='creatNetwork'>
+    <view class='functionText'>
+      <view class='functionText1'>创建网络</view>
+      <view class='functionText2'>一分钟快捷创建网络</view>
+    </view>
+    <image class='functionImg' src='/images/CreatNetwork.png'></image>
+  </view>
+  <view class='function' bindtap='addAP'>
+    <view class='functionText'>
+      <view class='functionText1'>添加设备</view>
+      <view class='functionText2'>扫描二维码快速添加设备</view>
+    </view>
+    <image class='functionImg' src='/images/AP.png'></image>
+  </view>
+  <view class='function' bindtap='aboutAC'>
+    <view class='functionText'>
+      <view class='functionText1'>关于无限云</view>
+      <view class='functionText2'>想了解无线云更多信息？</view>
+    </view>
+    <image class='functionImg' src='/images/about.png'></image>
+  </view>
+</view>

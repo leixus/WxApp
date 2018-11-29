@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <image class='loginBgImg' src='/images/loginBg.png'></image>
+  <view class='loginContent'>
+    <view class='account'>
+      <text>账号</text>
+      <input name="userName" type='text' placeholder='请输入用户名' placeholder-class='placeholder' bindinput='userNameInput'></input>
+    </view>
+    <view class='hr'></view>
+    <view class='password'>
+      <text>密码</text>
+      <input name="userPassword" type='password' placeholder='请输入密码' placeholder-class='placeholder' bindinput='userPasswordInput'></input>
+    </view>
+    <view class='hr'></view>
+    <view class='identifying-code'>
+      <text>验证码</text>
+      <input name="identifyingCode" type='text' placeholder='请输入验证码' placeholder-class='placeholder' bindinput='identifyingCodeInput'></input>
+      <view class='canvas-code'>
+        <image class='codeImg' src='data:image/png;base64,{{captchaImg}}' catchtap='onImgTap'></image>
+      </view>
+    </view>
+    <view class='hr' style='margin-bottom:20rpx'></view>
+  </view>
+  <button open-type='getUserInfo' bindgetuserinfo='login' class='login'>登录</button>
+  <text class='busName'>全维技术股份有限公司</text>
+</view>

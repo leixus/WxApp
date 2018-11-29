@@ -1,0 +1,19 @@
+<!--pages/homePage/myWO/finishWO/finishWO.wxml-->
+<view class='container'>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker1">
+        安装结果：{{array[index]}}
+      </view>
+      <view class='pickerImg'>
+        <text class='iconfont icon-xiala'></text>
+      </view>
+    </picker>
+  </view>
+  <view class='hr'></view>
+  <view class='workFeedback'>
+    <text>安装反馈:</text>
+    <textarea placeholder='安装反馈' placeholder-class='placeholder' bindinput='workFeedbackInput'></textarea>
+  </view>
+  <button class='confirm' bindtap='updataResult'>提交</button>
+</view>

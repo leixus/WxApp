@@ -1,0 +1,77 @@
+/* pages/homePage/setup/addEquToNet/addEquToNet.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ifNoNet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NoNetImg {
+  width: 268rpx;
+  height: 164rpx;
+  margin-top: 260rpx;
+}
+
+.NoNetText {
+  margin-top: 45rpx;
+}
+
+.netList {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.netListTitle {
+  height: 80rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  margin-left: 25rpx;
+  color: #a3a5a8;
+}
+
+.netListInfo {
+  border-bottom: 1px solid #ececec;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+}
+
+.netListImg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+
+.netInfoName {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  width: 580rpx;
+}
+
+.netSelImg {
+  height: 64rpx;
+  width: 64rpx;
+  margin-top: 10rpx;
+}
+
+.confirm {
+  margin-top: 45rpx;
+  width: 680rpx;
+  background-color: #4990e2;
+  color: white;
+}
+
+.netInfoNameActiv {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #4990e2;
+  width: 580rpx;
+}

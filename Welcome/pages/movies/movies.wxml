@@ -1,0 +1,37 @@
+<import src="movie-list/movie-list-template.wxml" />
+<import src="movie-content/movie-content.wxml" />
+
+<view class="search">
+  <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+  <input type="text" placeholder="血战钢锯岭、你的名字" value="{{inputMovie}}" placeholder-class="placeholder" bindfocus="onBindFocus" bindconfirm="onBindConfirm" />
+  <image wx:if="{{searchPanelShow}}" src="/images/icon/xx.png" class="xx-img" catchtap="onCancelImgTap"></image>
+</view>
+
+<view class="container" wx:if="{{containerShow}}">
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...inTheaters}}" />
+  </view>
+
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...comingSoon}}" />
+  </view>
+
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...top250}}" />
+  </view>
+</view>
+
+<view class="grid-container" wx:if="{{searchPanelShow}}">
+  <block wx:for="{{searchResult.movies}}" wx:for-item="resultMovie">
+    <view class="single-view-container">
+      <template is="movieContent" data="{{...resultMovie}}" />
+    </view>
+  </block>
+</view>
+
+<view class="not-search" wx:if="{{notSearch}}">
+  <text>没有找到与“</text>
+  <text>{{inputMovie}}</text>
+  <text>”相关的结果</text>
+</view>
+

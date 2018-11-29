@@ -1,0 +1,152 @@
+/* pages/homePage/myWO/WOdetail/WOdetail.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.installResult-bg {
+  height: 120rpx;
+  background-color: #4990e2;
+}
+
+.installResult {
+  width: 670rpx;
+  height: 160rpx;
+  background-color: white;
+  position: absolute;
+  margin-left: 40rpx;
+  -webkit-box-shadow: 1px 1px 1px;
+  -moz-box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 1px;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.successImg {
+  height: 128rpx;
+  width: 128rpx;
+  margin-top: 10rpx;
+  margin-left: 160rpx;
+}
+
+.installResultText {
+  line-height: 160rpx;
+  font-size: 42rpx;
+  margin-left: 45rpx;
+}
+
+.WOdetailInfo {
+  background-color: white;
+  margin-top: 65rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.WOdetailBus {
+  margin-top: 25rpx;
+  margin-bottom: 20rpx;
+  margin-left: 25rpx;
+}
+
+.WOdetailContent {
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  font-size: 28rpx;
+  color: #a3a5a8;
+  display: flex;
+  flex-direction: row;
+}
+
+.WOdetailContentName {
+  width: 150rpx;
+}
+
+.WOdetailContentResult {
+  width: 500rpx;
+  height: 200rpx;
+}
+
+.placeholder {
+  font-size: 28rpx;
+  color: #a3a5a8;
+}
+
+/* .detailTitle {
+  height: 100rpx;
+  background-color: #f2f2f2;
+  line-height: 100rpx;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+}
+
+.detailTitle text {
+  margin-left: 70rpx;
+  width: 200rpx;
+}
+
+.detailImg {
+  width: 48rpx;
+  height: 48rpx;
+  margin-top: 28rpx;
+  margin-left: 200rpx;
+}
+
+.WOdetailInfo {
+  margin-top: 40rpx;
+}
+
+.WOdetailTitle{
+  display: flex;
+  flex-direction: row;
+}
+.WOdetailTitleImg{
+  width: 64rpx;
+  height: 64rpx;
+}
+.WOdetailInfo text {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 42rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-weight: 500;
+}
+
+.WOdetailContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.WOdetailContent-1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+  font-size: 28rpx;
+}
+
+.WOdetailContent-2 {
+  width: 200rpx;
+  margin-left: 70rpx;
+}
+
+.WOdetailContent-3 {
+  width: 450rpx;
+}
+
+.WOdetailContent-equ {
+  width: 450rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.WOdetailText {
+  width: 450rpx;
+  height: 200rpx;
+  border: 1px solid #adadad;
+  color: #adadad;
+} */

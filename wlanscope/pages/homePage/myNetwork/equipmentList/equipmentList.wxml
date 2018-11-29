@@ -1,0 +1,86 @@
+<!--pages/homePage/myNetwork/equipmentList/equipmentList.wxml-->
+<view class='container'>
+  <view class='busNetName-bg'>
+    <view class='busNetName'>
+      <text class='busName'>杭州全维技术有限公司</text>
+      <text class='NetName'>全维8楼研发组wifi</text>
+    </view>
+  </view>
+  <view class='equipmentList'>
+    <radio-group bindchange="equipmentChange">
+      <view class='equipmentSel'>
+        <label class="{{equipmentCheckVal=='AP'?'equipmentSel1':'equipmentSel2'}}">AP
+          <radio hidden="true" value='AP'></radio>
+        </label>
+        <label class="{{equipmentCheckVal=='交换机'?'equipmentSel1':'equipmentSel2'}}">交换机
+          <radio hidden="true" value='交换机'></radio>
+        </label>
+        <label class="{{equipmentCheckVal=='网关及其他'?'equipmentSel1':'equipmentSel2'}}">网关及其他
+          <radio hidden="true" value='网关及其他'></radio>
+        </label>
+      </view>
+    </radio-group>
+    <view class='equipmentListInfo'>
+      <view class='equipment' wx:if="{{equipmentCheckVal=='AP'}}">
+        <view class='equFunction'>
+          <view class='equipmentName'>
+            <image class='equipmentNameImg' src='/images/router.png'></image>
+            <text class='equipmentNameText'>XL783729SOIW989</text>
+          </view>
+          <view class='equipmentRF' bindtap='onRFconfigTap'>射频</view>
+          <view class='equipmentReplace'>替换</view>
+          <image class='equipmentDel' src='/images/close.png'></image>
+        </view>
+        <view class='equFunction'>
+          <view class='equipmentName'>
+            <image class='equipmentNameImg' src='/images/router.png'></image>
+            <text class='equipmentNameText'>XL783729SOIW989</text>
+          </view>
+          <view class='equipmentRF' bindtap='onRFconfigTap'>射频</view>
+          <view class='equipmentReplace'>替换</view>
+          <image class='equipmentDel' src='/images/close.png'></image>
+        </view>
+        <view class='equFunction'>
+          <view class='equipmentName'>
+            <image class='equipmentNameImg' src='/images/router.png'></image>
+            <text class='equipmentNameText'>XL783729SOIW989</text>
+          </view>
+          <view class='equipmentRF' bindtap='onRFconfigTap'>射频</view>
+          <view class='equipmentReplace'>替换</view>
+          <image class='equipmentDel' src='/images/close.png'></image>
+        </view>
+      </view>
+      <view class='equipment' wx:if="{{equipmentCheckVal=='交换机'}}">
+        <view class='equFunction'>
+          <view class='equipmentName'>
+            <image class='equipmentNameImg' src='/images/router.png'></image>
+            <text class='equipmentNameText'>BL737DS9SOIW989</text>
+          </view>
+          <view class='equipmentRF' bindtap='onRFconfigTap'>射频</view>
+          <view class='equipmentReplace'>替换</view>
+          <image class='equipmentDel' src='/images/close.png'></image>
+        </view>
+        <view class='equFunction'>
+          <view class='equipmentName'>
+            <image class='equipmentNameImg' src='/images/router.png'></image>
+            <text class='equipmentNameText'>BL737DS9SOIW989</text>
+          </view>
+          <view class='equipmentRF' bindtap='onRFconfigTap'>射频</view>
+          <view class='equipmentReplace'>替换</view>
+          <image class='equipmentDel' src='/images/close.png'></image>
+        </view>
+      </view>
+      <view class='equipment' wx:if="{{equipmentCheckVal=='网关及其他'}}">
+        <view class='equFunction'>
+          <view class='equipmentName'>
+            <image class='equipmentNameImg' src='/images/router.png'></image>
+            <text class='equipmentNameText'>BL737DS9SOIW989</text>
+          </view>
+          <view class='equipmentRF' bindtap='onRFconfigTap'>射频</view>
+          <view class='equipmentReplace'>替换</view>
+          <image class='equipmentDel' src='/images/close.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

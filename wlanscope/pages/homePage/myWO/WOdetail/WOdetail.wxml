@@ -1,0 +1,40 @@
+<!--pages/homePage/myWO/WOdetail/WOdetail.wxml-->
+<view class='container'>
+  <view class='installResult-bg'>
+    <view class='installResult'>
+      <image class='successImg' src='/images/success.png'></image>
+      <text class='installResultText'>安装成功</text>
+    </view>
+  </view>
+  <view class='WOdetailInfo'>
+    <view class='WOdetailBus'>全维技术</view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>工单号：</view>
+      <view>GD3555</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>设备类型：</view>
+      <view>AP/交换机</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>设备型号：</view>
+      <view>QW123:10台/QW456:1台</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>生成时间：</view>
+      <view>2018/05/05 15:00</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>完成时间：</view>
+      <view>2018/05/06 15:00</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>责任人：</view>
+      <view>王某某</view>
+    </view>
+    <view class='WOdetailContent'>
+      <view class='WOdetailContentName'>工单反馈：</view>
+      <textarea class='WOdetailContentResult' placeholder='正常安装，没有异常' placeholder-class='placeholder' disabled='true'></textarea>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/homePage/setup/addEquToNet/addEquToNet.wxml-->
+<view class='container'>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{enterpriseList}}" range-key='enterprise'>
+      <view class="picker1">
+        当前企业：{{enterpriseList[index].enterprise}}
+      </view>
+      <view class='pickerImg'>
+        <text class='iconfont icon-xiala'></text>
+      </view>
+    </picker>
+  </view>
+  <!-- 如果没有网络 -->
+  <view class='ifNoNet' wx:if="{{isEmpty=='true'}}">
+    <image class='NoNetImg' src='/images/NoNet.png'></image>
+    <text class='NoNetText'>当前企业无网络</text>
+  </view>
+  <!-- 如果有网络 -->
+  <view wx:if="{{isEmpty=='false'}}">
+    <text class='netListTitle'>网络列表</text>
+    <view class='netList'>
+      <view class='netListInfo' wx:for="{{NetList}}" wx:for-item="netList" wx:key="key" bindtap='chooseNet' data-netId="{{netList.netId}}">
+          <text class='iconfont icon-wangluo'></text>
+        <view class="{{netList.netId==netId?'netInfoNameActiv':'netInfoName'}}">{{netList.netName}}</view>
+        <text wx:if="{{netList.netId==netId}}" class='iconfont icon-queding'></text>
+      </view>
+    </view>
+  </view>
+  <!-- 如果有网络 -->
+  <button class='confirm' bindtap='upEquListTap' wx:if="{{isEmpty=='false'}}">完成</button>
+  <!-- 如果没有网络 -->
+  <button class='confirm' wx:if="{{isEmpty=='true'}}">去创建网络</button>
+</view>

@@ -1,0 +1,54 @@
+.index-container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+}
+.index-header{
+  height: 64rpx;
+  line-height: 64rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.index-images{
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+}
+.index-header-date{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+}
+
+.index-content-header{
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.index-content-images{
+  width: 100%;
+  height: 360rpx;
+}
+
+.index-content-text{
+  font-size: 30rpx;
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+.index-icon{
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 14rpx;
+}
+
+.index-icon-text{
+  font-size: 20rpx;
+  margin-right: 30rpx;
+}

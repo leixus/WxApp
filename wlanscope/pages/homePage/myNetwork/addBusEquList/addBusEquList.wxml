@@ -1,0 +1,74 @@
+<!--pages/homePage/myNetwork/addBusEquList/addBusEquList.wxml-->
+<view class='container'>
+  <view class='busNetName-bg'>
+    <view class='busNetName'>
+      <text class='busName'>杭州全维技术有限公司</text>
+      <text class='NetName'>全维8楼研发组wifi</text>
+    </view>
+  </view>
+  <view class='addButton'>
+    <view class='scanCode' bindtap='onCodeTap'>
+      <image class='buttonImg' src='/images/code.png'></image>
+      <text class='buttonText'>扫码添加</text>
+    </view>
+    <view class='cut'></view>
+    <view class='addself' bindtap='onAddselfTap'>
+      <image class='buttonImg' src='/images/addself.png'></image>
+      <text class='buttonText'>手动添加</text>
+    </view>
+  </view>
+  <text class='equInfoText'>设备类型</text>
+  <view class='equInfo'>
+    <view class='equInfoContent'>
+      <view class='equSerial'>
+        <image class='equSerialImg' src='/images/router.png'></image>
+        <text class='equSerialText'>DL78f229saib134</text>
+      </view>
+      <view class='equType'>
+        <text class='equTypeText'>AP</text>
+      </view>
+      <view class='equDel'>
+        <image class='equDelImg' src='/images/close.png'></image>
+      </view>
+    </view>
+    <view class='equInfoContent'>
+      <view class='equSerial'>
+        <image class='equSerialImg' src='/images/router.png'></image>
+        <text class='equSerialText'>AL7a13729soiw592</text>
+      </view>
+      <view class='equType'>
+        <text class='equTypeText'>网关及其他设备</text>
+      </view>
+      <view class='equDel'>
+        <image class='equDelImg' src='/images/close.png'></image>
+      </view>
+    </view>
+    <view class='equInfoContent'>
+      <view class='equSerial'>
+        <image class='equSerialImg' src='/images/router.png'></image>
+        <text class='equSerialText'>XL78aw19soiw939</text>
+      </view>
+      <view class='equType'>
+        <text class='equTypeText'>AP</text>
+      </view>
+      <view class='equDel'>
+        <image class='equDelImg' src='/images/close.png'></image>
+      </view>
+    </view>
+    <view class='equInfoContent'>
+      <view class='equSerial'>
+        <image class='equSerialImg' src='/images/router.png'></image>
+        <text class='equSerialText'>XL78aw19soiw939</text>
+      </view>
+      <view class='equType'>
+        <text class='equTypeText'>AP</text>
+      </view>
+      <view class='equDel'>
+        <image class='equDelImg' src='/images/close.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <button class='confirm'>确定</button>
+  <text class='PS'>注：设备联网后，一般5分钟内上线</text>
+</view>
