@@ -43,4 +43,7 @@
   flex-direction: row;
   /* border: 1px solid #ccc; */
 }
-
+.search-panel{
+    position:absolute;
+    top:80rpx;
+}

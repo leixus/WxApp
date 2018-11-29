@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/movies/movies",
     "pages/Welcome/Welcome",
+    "pages/movies/movies",
     "pages/index/index",
     "pages/logs/logs",
     "pages/index/index-template/index-template",

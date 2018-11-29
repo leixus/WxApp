@@ -1,4 +1,5 @@
 @import "movie-list/movie-list-template.wxss";
+@import "more-movies/more-movies.wxss";
 
 .container {
   background-color: #f2f2f2;
@@ -33,13 +34,14 @@
   margin-bottom: 30rpx;
 }
 
-.search-panel{
-    position:absolute;
-    top:80rpx;
+.xx-img {
+  height: 24rpx;
+  width: 24rpx;
+  margin: auto 0 auto 10rpx;
 }
-
-.xx-img{
-    height: 30rpx;
-    width: 30rpx;
-    margin:auto 0 auto 10rpx;
+.not-search{
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 60rpx;
+  /* margin: 60rpx auto 0; */
 }

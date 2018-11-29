@@ -1,1 +1,10 @@
-/* pages/movies/more-movies/more-movies.wxss */
+@import "../movie-content/movie-content.wxss";
+.grid-container{
+    /* height: 1300rpx; */
+    margin:40rpx 0 40rpx 6rpx;
+}
+
+.single-view-container{
+    float:left;
+    margin: 10rpx 4rpx 40rpx 6rpx;
+}
